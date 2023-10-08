@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--main-font: 'Manrope', sans-serif;
+	--mono-font: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+	--white: #e0f2ff;
+	--accent-color: #9ed5ff;
+	--accent-color-two: #afd3f4;
+	--accent-low-opacity: #68bcf826;
+	--bg-color: #1a191f;
+	--grey-one: #252b31;
+	--grey-two: #27303a;
+	--grey-three: #373e4e;
+	--grey-four: #182244;
+	--grey-five: #acc1d2;
+	--grey-six: #1e1f24;
+	--grey-seven: #1f1f26;
+	--grey-eight: #acc1d293;
+	--grey-nine: #1111134d;
+	--grey-ten: #282a31;
+	--grey-eleven: #5c6770;
+	--red-one: #ef4d96;
+	--bezier-one: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	--drop-shadow-one: 0px 4px 5px 0px #00000024, 0px 1px 10px 0px #0000001f,0px 2px 4px -1px #00000033;
+    }
+
+html {
+	margin: 0;
+	padding: 0;
+	background-color: var(--bg-color);
+    max-width: 100%;
+	text-align: center;
+}
+
+h1 {
+	color: var(--white);
+	line-height: 4rem;
+	font-size: 3.5rem;
+	font-weight: 700;
+	letter-spacing: -0.025em;
+}
+
+h2 {
+	color: var(--grey-five);
+	font-size: 2rem;
+	letter-spacing: -0.04rem;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 1.25rem;
+	color: var(--accent-color-two);
+	font-weight: 600;
+}
+
+h4 {
+	color: var(--accent-color-two);
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 0.02rem;
+	line-height: 2rem;
+}
+
+h5 {
+	color: var(--grey-five);
+	font-weight: 400;
+	font-size: 0.9rem;
+	letter-spacing: 0.02rem;
+}
+
+h6 {
+	color: var(--grey-five);
+	font-weight: 500;
+	font-size: 0.85rem;
+}
+
+p {
+	color: var(--white);
+	font-weight: 400;
+	font-size: 1.3rem;
+	letter-spacing: 0.02rem;
+	line-height: 1.75rem;
+}
+
+li {
+	color: var(--grey-five);
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 0.02rem;
+	line-height: 1.75rem;
+}
+
+.link {
+    color: var(--grey-eight);
+    font-size: 14pt;
+	text-decoration:none
+	
+
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid var(--grey-three);
+}
+
+img {
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+    max-height: 200px;
+    border-radius: 50%;
+    
+  }
+
+    /* Rotating pfp animation */
+/*
+img:hover {
+    -webkit-animation:spin 0.3s linear infinite;
+    -moz-animation:spin 0.3s linear infinite;
+    animation:spin 0.3s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    }
+}*/
+
+	/* text jumpscare */
+ .jumpscare {
+	-webkit-animation: pulsate 0.5s ease-out;
+	-webkit-animation-iteration-count: infinite;
+	opacity: 0.5;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* This sets the height of the body to the viewport height */
+    margin: 0;
+}
+
+  @-webkit-keyframes pulsate {
+	0% {
+		opacity: 0.0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 0.5;
+		-webkit-transform: scale(1.5);
+	}
+	100% {
+		opacity: 1.0;
+		-webkit-transform: scale(2.0);
+	}
+  }
