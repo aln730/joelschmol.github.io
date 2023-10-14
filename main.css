@@ -90,6 +90,13 @@ li {
 	line-height: 1.75rem;
 }
 
+button {
+	background-color: var(--grey-four);
+	border: none;
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+
 .link {
     color: var(--grey-eight);
     font-size: 14pt;
@@ -111,7 +118,6 @@ img {
 	margin-right: auto;
     max-height: 200px;
     border-radius: 50%;
-    
   }
 
     /* Rotating pfp animation */
@@ -136,14 +142,14 @@ img:hover {
 
 	/* text jumpscare */
  .jumpscare {
+	display: block;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 20%;
+	opacity: 0.5;
+	padding: 10px;
 	-webkit-animation: pulsate 0.5s ease-out;
 	-webkit-animation-iteration-count: infinite;
-	opacity: 0.5;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh; /* This sets the height of the body to the viewport height */
-    margin: 0;
 }
 
   @-webkit-keyframes pulsate {
