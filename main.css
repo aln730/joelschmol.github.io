@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: #201a19;
+  color: #fff;
+  --main-font: 'Manrope', sans-serif;
+	--mono-font: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  max-width: 100%;
+	text-align: center;
+}
+
+h1 {
+  color: #ffb4a3;	
+	line-height: 4rem;
+	font-size: 3.5rem;
+	font-weight: 700;
+	letter-spacing: -0.025em;
+}
+
+h2 {
+	color: #ffb4a3;
+	font-size: 2rem;
+	letter-spacing: -0.04rem;
+	font-weight: 600;
+}
+
+h3 {
+  color: #ffb4a3;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+h4 {
+  color: #ffb4a3;
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 0.02rem;
+	line-height: 2rem;
+}
+
+h5 {
+  color: #ffb4a3;
+	font-weight: 400;
+	font-size: 0.9rem;
+	letter-spacing: 0.02rem;
+}
+
+h6 {
+  color: #ffb4a3;
+	font-weight: 500;
+	font-size: 0.85rem;
+}
+
+p {
+  color: #F7EBE8;
+  font-weight: 400;
+	font-size: 1.3rem;
+	letter-spacing: 0.02rem;
+	line-height: 1.75rem;
+}
+
+img {
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+  max-height: 200px;
+  border-radius: 50%;
+}
+
+hr {
+  display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ffdad2;
+}
+
+button {
+  background-color: #555843;
+  color: #222;
+  border: none;
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+
+button:hover {
+  background-color: #ffb4a2;
+}
+
+li {
+  color: #F7EBE8;
+  font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 0.02rem;
+	line-height: 1.75rem;
+}
+
+.link {
+  color: #F7EBE8;
+  font-size: 14pt;
+	text-decoration:none
+}
+
+.link:hover {
+  color: #ffb4a3; 
+}
+
+	/* text jumpscare */
+div.jumpscare {
+  display: inline-block;
+  position: relative;
+  top: 50vh;
+  padding: 0%;
+  margin: 0%;
+  -webkit-animation: pulsate 0.5s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-webkit-keyframes pulsate {
+    0% {
+      opacity: 0.0;
+      -webkit-transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      -webkit-transform: scale(1.5);
+    }
+    100% {
+      opacity: 1.0;
+      -webkit-transform: scale(2.0);
+    }
+  }
+
+    /* Rotating pfp animation */
+/*
+img:hover {
+    -webkit-animation:spin 0.3s linear infinite;
+    -moz-animation:spin 0.3s linear infinite;
+    animation:spin 0.3s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    }
+} */
